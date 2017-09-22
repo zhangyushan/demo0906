@@ -24,6 +24,7 @@
 	<mvc:view-controller path="user/toRegist" view-name="user_regist"/>
 	<mvc:view-controller path="user/toLogin" view-name="user_login"/>
 	<mvc:view-controller path="user/toPersonalCenter" view-name="user_center"/>
+	<mvc:view-controller path="user/toSendEmail" view-name="user_reset_pwd"/>
 	
 	<!-- 配置springMVC文件上传解析器 -->
 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
@@ -89,6 +90,9 @@
 				<prop key="com.atguigu.demo.common.exception.TrackerConfigNotFoundException">error</prop>
 				<prop key="com.atguigu.demo.common.exception.UploadFailedException">error</prop>
 				<prop key="com.atguigu.demo.common.exception.UserMessageUpdateFailException">error</prop>
+				<prop key="com.atguigu.demo.common.exception.UserNameNotActivityException">error</prop>
+				<prop key="com.atguigu.demo.common.exception.TokenNotFoundException">error</prop>
+				<prop key="com.atguigu.demo.common.exception.SendEmailFailException">error</prop>
 			</props>
 		</property>
 	</bean>

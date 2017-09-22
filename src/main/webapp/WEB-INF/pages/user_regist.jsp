@@ -15,6 +15,8 @@
 			
 			用户账号：<input type="text" name="userName" /><br/>
 			用户密码：<input type="text" name="userPwd" /><br/>
+			用户邮箱：<input type="text" name="email" /><br/>
+			
 				    <input type="submit" value="提交" />
 		</form>
 	</body>
